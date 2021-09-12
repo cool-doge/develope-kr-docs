@@ -1,0 +1,26 @@
+Operation Policy
+=====================================================
+
+1. This document describes future operations.
+    - User resource access restrictions
+    - Examples of non-normal use
+    - Examples of resource access restrictions
+
+2. If Develope.kr determines that you are not using it normally, it may restrict your access to resources. Restrictions include:
+    - API
+    - Information provided by sites
+
+3. Examples of non-normal use
+    - Distribute Denial of Service (DDOS), spam, etc.
+    - Excessive resource access attempts
+    - Hacking and attacking attempts such as SQL Injection, XSS, etc.
+    - Other acts that are judged to be non-normal use
+The examples shown here are examples. If an activity is detected that is deemed to be an additional non-normal use, the user may be restricted access to resources even if it is not listed above.
+
+4. Examples of resource access restrictions
+    - Block site access
+    - Limit access to resources from other partnering sites
+    - Block other users from obtaining information from the site
+
+5. Inform that some of the sources of information in the API provided on this site are not formulas. If you use the resources available on the site, we will think you are aware of them.
+    - Informal: Searching for KakaoTalk open chat information

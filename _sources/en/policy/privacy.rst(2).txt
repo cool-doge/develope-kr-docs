@@ -1,0 +1,34 @@
+Privacy Policy
+=====================================================
+
+1. If you use the resources provided by the site, you agree to collect personal information. If you don't agree, you can leave the site.
+    - API
+    - Information provided by other sites
+
+2. This site collects minimal information from users for service maintenance and improvement purposes. The user information that you collect is as follows.
+    - IP
+    - User Agent
+    - Cookie.
+    - Access country.
+    - Terminal information (OS, screen size, device ID, phone type, device model name)
+    - Date of visit
+    - Service use records
+    - Records of fraudulent use
+
+3. Here's how to collect personal information from the site:
+    - Information arising from API use process
+    - Information from clients when connecting to a site
+    - Information generated and acquired during the course of using resources provided by sites
+
+4. The user's personal information is used in the following sections:
+    - Site Statistics
+    - False use check
+    - Maintain and improve sites
+
+5. Your information will be processed in the following ways:
+    - User information shall be kept and destroyed for up to 10 years from the last date of use.
+    - User information shall be destroyed in an electronic manner that cannot be recovered.
+
+6. The person in charge of personal information protection is as follows:
+    - Responsible: KeonWoo PARK
+    - Contact: parkkw472@develope.kr

@@ -1,0 +1,80 @@
+Naver Blog Rank Search API
+=====================================================
+
+ This API is for look up Naver blog search rankings.
+----------
+
+Request URL
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: link
+
+    https://api.develope.kr/search/naver/blog
+
+Protocol
+~~~~~~~~~~~~~~~~~~~~~~
+HTTPS
+
+HTTP method
+~~~~~~~~~~~~~~~~~~~~~~
+GET
+
+parameters
+~~~~~~~~~~~~~~~~~~~~~~
+
+============ ========= ========== ============================
+ parameters   Type      Required   Description
+============ ========= ========== ============================
+ id           String    Yes        Naver Blog ID
+ keyword      String    Yes        Naver Search Keyword
+============ ========= ========== ============================
+
+Request Example
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: curl
+
+    curl "https://api.develope.kr/search/naver/blog?id=saleserver&keyword=Server"
+        -H "Content-Type:application/json"
+
+Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ rank          int       Yes        Rank
+ title         String    Yes        Title
+ description   String    Yes        Description
+ blogger_name  String    Yes        Blogger Name
+ link          String    Yes        Link
+ post_date     String    Yes        Post date
+ 
+ 
+============= ========= ========== ============================
+
+Error Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ success       String    Yes        API success or failure 
+ reason        String    No         Failure reason
+ Code          int       Yes        Error Code
+============= ========= ========== ============================
+
+Error Code
+~~~~~~~~~~~~~~~~~~~~~~
+============= ==================================
+ Number       Description
+============= ==================================
+ 0             Success
+ 1             Can't find Blog or Keywords
+ 3             Invaild request or Naver error
+ 4             No Parameters
+ 5             Can't connect to Naver
+============= ==================================
+
+.. warning::
+    If you continue to encounter 403 Forbidden errors, please check the API response.
+    If you think it is blocking CloudFlare WAF (Web Application Firewall)
+    please send the IP, Ray ID, and response to parkkw472@develope.kr

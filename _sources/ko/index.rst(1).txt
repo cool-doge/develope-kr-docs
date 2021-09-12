@@ -1,0 +1,53 @@
+한국어
+=====================================================
+
+'Develope.KR' 공식 문서에 오신것을 환영합니다.
+이 공식 문서는 Develope.KR 서비스를 어떻게 사용하는지에 대한 자세한 설명을 담고있습니다.
+
+.. note::
+   
+   Develope.kr 는 항상 개발중입니다!
+   이 문서는 수시로 바뀔 수 있습니다.
+
+
+API
+----------
+Develope.kr API 는 거의 모든 플랫폼에 최적화 되어있습니다.
+관심있는 API를 골라 개발하세요!
+
+For KakaoTalk BOT
+^^^^^
+이 API들은 카카오톡 봇에 최적화되어있습니다.
+관심있는 API를 골라, 자신만의 봇을 만드세요!
+
+.. toctree::
+   :maxdepth: 1
+
+   apis/room_search_list.rst
+   apis/room_info.rst
+   apis/naver_blog_rank.rst
+   apis/COVID-19.rst
+
+For Any Platform
+^^^^^
+이 API들은 대부분의 플랫폼에 최적화 되어있습니다
+아래의 기능들을 선택해 자신만의 서비스를 만드세요!
+
+.. toctree::
+   :maxdepth: 1
+
+   apis/room_search_list.rst
+   apis/naver_blog_rank.rst
+   apis/COVID-19.rst
+
+Develope.kr 정책
+----------
+Develope.kr 는 사용자의 개인정보를 우선으로 생각합니다.
+아래의 문서에서 저희가 어떻게 사용자의 개인정보를 다루는지 확인하세요.
+
+.. toctree::
+   :maxdepth: 1
+
+   policy/operation.rst
+   policy/privacy.rst
+

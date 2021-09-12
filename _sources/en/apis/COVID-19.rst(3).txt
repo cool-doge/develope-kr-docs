@@ -1,0 +1,78 @@
+COVID-19 Virus World Infection Information API
+=====================================================
+
+ This API is the world's information API for the COVID-19 virus.
+----------
+
+.. warning::
+    This API is running on a test server, not on the main server.
+    The test is still in progress and may be unstable.
+
+Request URL
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: 
+
+    https://api.corona.develope.kr/data
+
+Protocol
+~~~~~~~~~~~~~~~~~~~~~~
+HTTPS
+
+HTTP Method
+~~~~~~~~~~~~~~~~~~~~~~
+GET
+
+Parameter
+~~~~~~~~~~~~~~~~~~~~~~
+
+============ ========= ========== =================================================
+ Parameter    Type      Required   Description
+============ ========= ========== =================================================
+ mode         String    Yes        Specify data to import (infected, dead, cures)
+============ ========= ========== =================================================
+
+mode parameter value Description
+~~~~~~~~~~~~~~~~~~~~~~
+
+============ ==========================================
+ Value        Description
+============ ==========================================
+ i            Infected
+ d            Dead
+ c            Cured
+============ ==========================================
+
+Request example
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: 
+
+    curl "https://api.corona.develope.kr/data?mode=i"
+        -H "Content-Type:application/json"
+
+Response
+~~~~~~~~~~~~~~~~~~~~~~
+================ ========= ========== ==================================================
+ Property         Type      Required   Description
+================ ========= ========== ==================================================
+ Province/State   String    Yes        Province/State
+ Country/Region   String    Yes        Country/Region
+ Lat              Double    Yes        GPS Lat
+ Long             Double    Yes        GPS Long
+ d/mm/yy          Int       Yes        Number of infections (or deaths, cures) by date
+================ ========= ========== ==================================================
+
+Error Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ success       String    Yes        API success or failure 
+ reason        String    No         Failure reason
+============= ========= ========== ============================
+
+.. warning::
+    If you continue to encounter 403 Forbidden errors, please check the API response.
+    If you think it is blocking CloudFlare WAF (Web Application Firewall)
+    please send the IP, Ray ID, and response to parkkw472@develope.kr

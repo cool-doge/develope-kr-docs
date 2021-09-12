@@ -1,0 +1,52 @@
+English
+=====================================================
+
+Welcome to 'Develope.KR' Official Documentation.
+This is an Official document about how to use Develope.kr services.
+
+.. note::
+   
+   Develope.kr is always under development. 
+   This document is subject to change from time to time.
+
+
+API
+----------
+Develope.kr API is optimized for use on any platform.
+Choose the API you are interested in and develop it!
+
+For KakaoTalk BOT
+^^^^^
+These APIs are optimized for Kakao Talk BOT.
+Choose the features you want, and make your own bot!
+
+.. toctree::
+   :maxdepth: 3
+   
+   apis/room_search_list.rst
+   apis/room_info.rst
+   apis/naver_blog_rank.rst
+   apis/COVID-19.rst
+
+For Any Platform
+^^^^^
+These APIs are optimized for most platforms.
+Build your own services with the features you want.
+
+.. toctree::
+   :maxdepth: 3
+
+   apis/room_search_list.rst
+   apis/naver_blog_rank.rst
+   apis/COVID-19.rst
+
+Develope.kr Policy
+----------
+Develope.kr values your personal information.
+See how we deal with your personal information in the documents below.
+
+.. toctree::
+   :maxdepth: 1
+
+   policy/operation.rst
+   policy/privacy.rst

@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>네이버 블로그 검색 순위 API &mdash; DEVELOPE.KR documentation 1.2.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="COVID-19 바이러스 세계 감염 정보 API" href="COVID-19.html" />
+    <link rel="prev" title="KakaoTalk 오픈채팅 정보 검색" href="room_info.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> DEVELOPE.KR documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">한국어</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#api">API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#for-kakaotalk-bot">For KakaoTalk BOT</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="room_search_list.html">KakaoTalk 오픈채팅방 목록 검색</a></li>
+<li class="toctree-l4"><a class="reference internal" href="room_info.html">KakaoTalk 오픈채팅 정보 검색</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">네이버 블로그 검색 순위 API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COVID-19.html">COVID-19 바이러스 세계 감염 정보 API</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#for-any-platform">For Any Platform</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="room_search_list.html">KakaoTalk 오픈채팅방 목록 검색</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">네이버 블로그 검색 순위 API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COVID-19.html">COVID-19 바이러스 세계 감염 정보 API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#develope-kr">Develope.kr 정책</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">English</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">DEVELOPE.KR documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">한국어</a> &raquo;</li>
+        
+      <li>네이버 블로그 검색 순위 API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/ko/apis/naver_blog_rank.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>네이버 블로그 검색 순위 API<a class="headerlink" href="#api" title="제목 주소">¶</a></h1>
+<blockquote>
+<div><p>이 API는 네이버 블로그 검색 순위를 조회할수 있는 API입니다.</p>
+</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="url">
+<h2>요청 URL<a class="headerlink" href="#url" title="제목 주소">¶</a></h2>
+<div class="highlight-link notranslate"><div class="highlight"><pre><span></span>https://api.develope.kr/search/naver/blog
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>프로토콜<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>HTTPS</p>
+</div>
+<div class="section" id="http">
+<h2>HTTP 메서드<a class="headerlink" href="#http" title="제목 주소">¶</a></h2>
+<p>GET</p>
+</div>
+<div class="section" id="id2">
+<h2>파라미터<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>파라미터</p></th>
+<th class="head"><p>타입</p></th>
+<th class="head"><p>필수여부</p></th>
+<th class="head"><p>설명</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>네이버 블로그 ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>keyword</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>네이버 검색 키워드</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>요청 예시<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<div class="highlight-curl notranslate"><div class="highlight"><pre><span></span>curl &quot;https://api.develope.kr/search/naver/blog?id=saleserver&amp;keyword=서버&quot;
+    -H &quot;Content-Type:application/json&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>응답<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>속성</p></th>
+<th class="head"><p>타입</p></th>
+<th class="head"><p>필수 여부</p></th>
+<th class="head"><p>설명</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rank</p></td>
+<td><p>int</p></td>
+<td><p>Yes</p></td>
+<td><p>순위</p></td>
+</tr>
+<tr class="row-odd"><td><p>title</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>글 제목</p></td>
+</tr>
+<tr class="row-even"><td><p>description</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>글 설명</p></td>
+</tr>
+<tr class="row-odd"><td><p>blogger_name</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>블로거 이름</p></td>
+</tr>
+<tr class="row-even"><td><p>link</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>글 링크</p></td>
+</tr>
+<tr class="row-odd"><td><p>post_date</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>글 작성 날짜</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>오류 응답<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>속성</p></th>
+<th class="head"><p>타입</p></th>
+<th class="head"><p>필수 여부</p></th>
+<th class="head"><p>설명</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>success</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>API 성공 여부</p></td>
+</tr>
+<tr class="row-odd"><td><p>reason</p></td>
+<td><p>String</p></td>
+<td><p>No</p></td>
+<td><p>실패 이유</p></td>
+</tr>
+<tr class="row-even"><td><p>Code</p></td>
+<td><p>int</p></td>
+<td><p>Yes</p></td>
+<td><p>오류 코드</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h2>오류 코드<a class="headerlink" href="#id6" title="제목 주소">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>번호</p></th>
+<th class="head"><p>설명</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>정상</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>블로그 또는 키워드를 찾지 못함</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>잘못된 요청 또는 네이버 오류</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>파라미터값 없음</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>서버에서 네이버 접속 실패</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">경고</p>
+<p>403 오류가 계속 발생할 경우, API 응답 내용을 확인해보시기 바랍니다.
+만약 CloudFlare WAF (웹 어플리케이션 방화벽) 차단이라고 생각되는경우
+<a class="reference external" href="mailto:parkkw472&#37;&#52;&#48;develope&#46;kr">parkkw472<span>&#64;</span>develope<span>&#46;</span>kr</a> 로 IP, Ray ID, 응답 내용을 함께 보내주세요.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="COVID-19.html" class="btn btn-neutral float-right" title="COVID-19 바이러스 세계 감염 정보 API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="room_info.html" class="btn btn-neutral float-left" title="KakaoTalk 오픈채팅 정보 검색" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, KeonWoo PARK
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

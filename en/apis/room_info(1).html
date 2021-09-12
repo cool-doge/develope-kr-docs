@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>KakaoTalk OpenChat Info Search &mdash; DEVELOPE.KR documentation 1.2.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Naver Blog Rank Search API" href="naver_blog_rank.html" />
+    <link rel="prev" title="KakaoTalk Open Chat List Search" href="room_search_list.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> DEVELOPE.KR documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ko/index.html">한국어</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">English</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#api">API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#for-kakaotalk-bot">For KakaoTalk BOT</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="room_search_list.html">KakaoTalk Open Chat List Search</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">KakaoTalk OpenChat Info Search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="naver_blog_rank.html">Naver Blog Rank Search API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="COVID-19.html">COVID-19 Virus World Infection Information API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#for-any-platform">For Any Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#develope-kr-policy">Develope.kr Policy</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">DEVELOPE.KR documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">English</a> &raquo;</li>
+        
+      <li>KakaoTalk OpenChat Info Search</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/en/apis/room_info.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kakaotalk-openchat-info-search">
+<h1>KakaoTalk OpenChat Info Search<a class="headerlink" href="#kakaotalk-openchat-info-search" title="제목 주소">¶</a></h1>
+<div class="section" id="this-api-is-for-searching-kakaotalk-openchat-room-information">
+<h2>This API is for Searching Kakaotalk OpenChat Room Information<a class="headerlink" href="#this-api-is-for-searching-kakaotalk-openchat-room-information" title="제목 주소">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">더 보기</p>
+<p>Looking for an OpenChat Room list API ? Read <a class="reference external" href="https://docs.develope.kr/en/apis/room_search_list.html">KakaoTalk OpenChat List Search API document</a>.</p>
+</div>
+<div class="section" id="request-url">
+<h3>Request URL<a class="headerlink" href="#request-url" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">api</span><span class="o">.</span><span class="n">develope</span><span class="o">.</span><span class="n">kr</span><span class="o">/</span><span class="n">search</span><span class="o">/</span><span class="n">room</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="protocol">
+<h3>Protocol<a class="headerlink" href="#protocol" title="제목 주소">¶</a></h3>
+<p>HTTPS</p>
+</div>
+<div class="section" id="http-method">
+<h3>HTTP Method<a class="headerlink" href="#http-method" title="제목 주소">¶</a></h3>
+<p>GET</p>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="제목 주소">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameters</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>room</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>Room name or Chat Link</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="request-example">
+<h3>Request example<a class="headerlink" href="#request-example" title="제목 주소">¶</a></h3>
+<div class="highlight-curl notranslate"><div class="highlight"><pre><span></span>curl &quot;https://api.develope.kr/search/room?room=MessengerBot&quot;
+    -H &quot;Content-Type:application/json&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="response">
+<h3>Response<a class="headerlink" href="#response" title="제목 주소">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>name</p></td>
+</tr>
+<tr class="row-odd"><td><p>link</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>OpenChat Link</p></td>
+</tr>
+<tr class="row-even"><td><p>description</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>Description</p></td>
+</tr>
+<tr class="row-odd"><td><p>headcount</p></td>
+<td><p>int</p></td>
+<td><p>Yes</p></td>
+<td><p>Number of people</p></td>
+</tr>
+<tr class="row-even"><td><p>master</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>Master Name</p></td>
+</tr>
+<tr class="row-odd"><td><p>tag</p></td>
+<td><p>Array</p></td>
+<td><p>Yes</p></td>
+<td><p>Tag</p></td>
+</tr>
+<tr class="row-even"><td><p>like</p></td>
+<td><p>int</p></td>
+<td><p>Yes</p></td>
+<td><p>Like</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="error-response">
+<h3>Error Response<a class="headerlink" href="#error-response" title="제목 주소">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>success</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>API success or failure</p></td>
+</tr>
+<tr class="row-odd"><td><p>reason</p></td>
+<td><p>String</p></td>
+<td><p>Yes</p></td>
+<td><p>Failure reason</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">경고</p>
+<p>If you continue to encounter 403 Forbidden errors, please check the API response.
+If you think it is blocking CloudFlare WAF (Web Application Firewall)
+please send the IP, Ray ID, and response to <a class="reference external" href="mailto:parkkw472&#37;&#52;&#48;develope&#46;kr">parkkw472<span>&#64;</span>develope<span>&#46;</span>kr</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="naver_blog_rank.html" class="btn btn-neutral float-right" title="Naver Blog Rank Search API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="room_search_list.html" class="btn btn-neutral float-left" title="KakaoTalk Open Chat List Search" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, KeonWoo PARK
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

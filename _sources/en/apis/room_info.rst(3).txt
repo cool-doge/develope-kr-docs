@@ -1,0 +1,66 @@
+KakaoTalk OpenChat Info Search
+=====================================================
+
+This API is Kakaotalk Open Chat Room Information Search API.
+----------
+
+Request URL
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: 
+
+    https://api.develope.kr/search/room
+
+Protocol
+~~~~~~~~~~~~~~~~~~~~~~
+HTTPS
+
+HTTP Method
+~~~~~~~~~~~~~~~~~~~~~~
+GET
+
+Parameters
+~~~~~~~~~~~~~~~~~~~~~~
+
+============ ========= ========== ============================
+ Parameters   Type      Required   Description
+============ ========= ========== ============================
+ room         String    Yes        Room name or Chat Link
+============ ========= ========== ============================
+
+Request example
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: curl
+
+    curl "https://api.develope.kr/search/room?room=MessengerBot"
+        -H "Content-Type:application/json"
+
+Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ name          String    Yes        name
+ link          String    Yes        OpenChat Link
+ description   String    Yes        Description
+ headcount     int       Yes        Number of people
+ master        String    Yes        Master Name
+ tag           Array     Yes        Tag
+ like          int       Yes        Like
+ 
+============= ========= ========== ============================
+
+Error Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ success       String    Yes        API success or failure
+ reason        String    Yes        Failure reason
+============= ========= ========== ============================
+
+.. warning::
+    If you continue to encounter 403 Forbidden errors, please check the API response.
+    If you think it is blocking CloudFlare WAF (Web Application Firewall)
+    please send the IP, Ray ID, and response to parkkw472@develope.kr

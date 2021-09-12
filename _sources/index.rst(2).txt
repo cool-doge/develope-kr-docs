@@ -1,0 +1,20 @@
+한국어
+=====================================================
+'Develope.KR' 공식 문서에 오신것을 환영합니다.
+이 공식 문서는 Develope.KR 서비스를 어떻게 사용하는지에 대한 자세한 설명을 담고있습니다.
+
+.. toctree::
+   :maxdepth: 4
+
+   ko/index
+
+English
+=====================================================
+Welcome to 'Develope.KR' Official Documentation.
+This is an Official document about how to use Develope.kr services.
+
+.. toctree::
+   :maxdepth: 4
+
+   en/index
+

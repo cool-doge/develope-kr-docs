@@ -1,0 +1,85 @@
+KakaoTalk Open Chat List Search
+=====================================================
+
+This API is for searching OpenChat list.
+----------
+
+Request URL
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: link
+
+    https://api.develope.kr/search/room/list
+
+Protocol
+~~~~~~~~~~~~~~~~~~~~~~
+HTTPS
+
+HTTP method
+~~~~~~~~~~~~~~~~~~~~~~
+GET
+
+Parameters
+~~~~~~~~~~~~~~~~~~~~~~
+
+============ ========= ========== ======================================================================
+ Parameters   Type      Required   Description
+============ ========= ========== ======================================================================
+ query        String    Yes        Content to search for or room name (link)
+ type         String    Yes        Room type to search for (m = Openchat Room / p = Open Profile (1:1))
+ page         int       No         Page to be searched (default 1, up to 1000)
+ count        int       No         Number of chat rooms to search at one time (default 30, max 100)
+============ ========= ========== ======================================================================
+
+Request example
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: 
+
+    curl "https://api.develope.kr/search/room/list?query=Messenger Bot&type=m&page=1&count=30"
+        -H "Content-Type:application/json"
+
+
+Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ======================================
+ Property      Type      Required   Description
+============= ========= ========== ======================================
+ page          int       Yes        Retrieved page
+ count         int       Yes        Number of search results on the page
+ totalcount    int       Yes        Total number of search results
+ lists         Array     Yes        Search Results
+============= ========= ========== ======================================
+
+
+lists structure
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ================================================================
+ Property      Type      Required   Description
+============= ========= ========== ================================================================
+ name          String    Yes        Chat Room Name
+ owner         String    Yes        OpenChat Room(Profile) owner
+ openlink      String    Yes        OpenChat Room(Profile) link
+ tags          Array     No         OpenChat Room Tags
+ like          int       Yes        Number of likes
+ headcount     int       Yes        Number of people (Only available in open chat rooms)
+ locked        Boolean   Yes        is Locked?
+ lastchat      Time      Yes        Last chat time in the room (Only available in open chat rooms)
+ wp            String    Yes        OpenChat Room (Profile) Introduction Wallpaper Image
+ pfimg         String    Yes        Owner profile image
+============= ========= ========== ================================================================
+
+
+Error Response
+~~~~~~~~~~~~~~~~~~~~~~
+============= ========= ========== ============================
+ Property      Type      Required   Description
+============= ========= ========== ============================
+ success       String    Yes        API success or failure
+ reason        String    Yes        Failure reason
+============= ========= ========== ============================
+
+.. warning::
+    If you continue to encounter 403 Forbidden errors, please check the API response.
+    If you think it is blocking CloudFlare WAF (Web Application Firewall)
+    please send the IP, Ray ID, and response to parkkw472@develope.kr
